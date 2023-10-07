@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyStreamDHT</string>
+    <string name="my_applovin_sdk_key">202020202</string>
+    <string name="my_admob_app_id">02020245</string>
+</resources>
