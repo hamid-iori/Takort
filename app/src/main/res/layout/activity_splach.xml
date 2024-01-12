@@ -2,20 +2,19 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/dht_view_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context="com.tvbrasil.brasilia.aovivo.dahora.activitiestvbr.ActivityDhtSplash">
+
+    tools:context=".activities.SplachActivity">
 
     <ImageView
         android:id="@+id/imagesplash"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:background="@drawable/circle_bg"
         android:contentDescription="@string/img_content_description"
         android:elevation="8dp"
         android:src="@drawable/icon"
+        android:layout_marginTop="40dp"
         app:layout_constraintBottom_toTopOf="@+id/copyright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,9 +31,10 @@
         android:elevation="4dp"
         android:text="@string/app_name"
         android:textAllCaps="true"
-        android:textColor="#FFFFFF"
+        android:textColor="#1C1B1B"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagesplash"
@@ -44,14 +44,15 @@
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="128dp"
         android:layout_height="128dp"
-        android:background="@drawable/rounded_bg"
+
         android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copyright"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/animation_sat"
+        app:lottie_rawRes="@raw/animation_pobr"
         app:lottie_speed="0.7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
