@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyStreamDHT"
+rootProject.name = "MyStreamHamid"
 include ':app'

@@ -13,15 +13,28 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:networkSecurityConfig="@xml/network_config"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyStreamDHT"
+        android:theme="@style/Theme.MyStream"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
+
+        <activity
+            android:name=".activities.InternPlayer"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetCategoryDed"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailChannelDed"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SearchDed"
+            android:exported="false" />
 
         <activity
             android:name=".activities.SplachActivity"
@@ -48,18 +61,18 @@
             android:name=".activities.RedirectActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:noHistory="true"/>
+            android:noHistory="true" />
         <activity
             android:name=".activities.SecondActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:noHistory="true"/>
+            android:noHistory="true" />
         <activity
             android:name=".activities.FirstActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
-            android:noHistory="true"/>
 
+            />
 
         <meta-data
             android:name="applovin.sdk.key"
